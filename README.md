@@ -16,7 +16,8 @@ Please use the below command to deploy an IDP reference implementation with an A
 idpbuilder create \
   --use-path-routing \
   --package-dir https://github.com/cnoe-io/stacks//ref-implementation \
-  --package-dir https://github.com/cnoe-io/stacks//crossplane-integrations
+  --package-dir https://github.com/cnoe-io/stacks//crossplane-integrations \
+  --package-dir https://github.com/cnoe-io/backstage-crossplane-integrations//integration 
 ```
 ## What is installed?
 
@@ -32,7 +33,8 @@ idpbuilder create \
 idpbuilder create \
   --use-path-routing \
   --package-dir https://github.com/cnoe-io/stacks//ref-implementation \
-  --package-dir [path-to-stacks-repo]/crossplane-integrations
+  --package-dir [path-to-stacks-repo]/crossplane-integrations \
+  --package-dir https://github.com/cnoe-io/backstage-crossplane-integrations//integration
 ```
 
 5. Postgres credentials for RDS Database
@@ -66,5 +68,6 @@ kubectl apply -f ./postgres-secret.yaml
 idpbuilder create \
   --use-path-routing \
   --package-dir https://github.com/cnoe-io/stacks//ref-implementation \
-  --package-dir [path-to-stacks-repo]/crossplane-integrations
+  --package-dir [path-to-stacks-repo]/crossplane-integrations \
+  --package-dir https://github.com/cnoe-io/backstage-crossplane-integrations//integration \
 ```
