@@ -10,9 +10,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/cnoe-io/backstage-crossplane-integrations
+    repoURL: https://github.com/awslabs/crossplane-on-eks
     targetRevision: HEAD
-    path: "./crossplane-compositions"
+    path: "./compositions/aws-provider"
     directory:
       recurse: true
   destination:
