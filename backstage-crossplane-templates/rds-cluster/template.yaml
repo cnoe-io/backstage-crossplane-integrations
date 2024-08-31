@@ -110,7 +110,7 @@ spec:
       action: publish:gitea
       input:
         description: This is an example app
-        repoUrl: cnoe.localtest.me:8443/gitea?repo=${{parameters.name}}
+        repoUrl: http://my-gitea-http.gitea.svc.cluster.local:3000/?repo=${{parameters.name}}
         defaultBranch: main
     - id: create-argocd-app
       name: Create ArgoCD App
