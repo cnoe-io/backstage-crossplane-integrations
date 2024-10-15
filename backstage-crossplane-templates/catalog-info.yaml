@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: app-mod-backstage-templates
+  name: crossplane-backstage-templates
   description: CrossPlane Backstage Templates
 spec:
   targets:
