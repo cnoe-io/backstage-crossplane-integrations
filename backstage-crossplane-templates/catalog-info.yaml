@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: crossplane-backstage-templates
+  description: CrossPlane Backstage Templates
+spec:
+  targets:
+    - ./rds-cluster/template.yaml
+    - ./app-with-bucket/template.yaml
